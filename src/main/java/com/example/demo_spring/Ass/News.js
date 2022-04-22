@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td>${element.id}</td>
                 <td>${element.title}</td>
                 <td>${element.description}</td>
-                <td><img style="height: 100px" src="${element.image}"></td>
+                <td><img style="height: 100px;width: 100px; object-fit: contain" src="${element.image}"></td>
                 <td>${element.content}</td>
                 <td>${element.category}</td>
                 <td>${element.createAt}</td>
