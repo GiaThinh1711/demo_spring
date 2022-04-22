@@ -56,18 +56,18 @@
                     var element = JSON.parse(xhr.responseText);
                     var tableTag = document.querySelector('#news-table');
                     tableTag.innerHTML += `<tr>
-                                            <td>${element.id}</td>
-                                            <td>${element.title}</td>
-                                            <td>${element.description}</td>
-                                            <td><img src="${element.image} style="height: 100px"" ></td>
-                                            <td>${element.content}</td>
-                                            <td>${element.category}</td>
-                                            <td>${element.createdAt}</td>
-                                            <td>${element.updatedAt}</td>
-                                            <td>${element.status}</td>
+                                                    <td>${element.id}</td>
+                                                    <td>${element.title}</td>
+                                                    <td>${element.description}</td>
+                                                    <td><img style="height: 100px" src="${element.image}"></td>
+                                                    <td>${element.content}</td>
+                                                    <td>${element.category}</td>
+                                                    <td>${element.createAt}</td>
+                                                    <td>${element.updateAt}</td>
+                                                    <td>${element.status}</td>
                                     </tr>`;
                 } else {
-                    alert('khong the load');
+                    alert("Can't load news");
                 }
             }
         }

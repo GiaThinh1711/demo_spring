@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td>${element.updateAt}</td>
                 <td>${element.status}</td>
                 <td><a href="Detail.html?id=${element.id}"><i class="fas fa-info-square" onclick="loadNewsDetail(${element.id})"></i></a></td>
-                <td><a><i class="fas fa-edit" onclick='editproduct(${element.id})'></i></a></td>
+                <td><a href="Form_News.html?${element.id}"><i class="fas fa-edit"></i></a></td>
                 <td><i class="fas fa-trash" onclick='deleteProduct(${element.id})'></i></td>
               </tr>`
             }
@@ -36,7 +36,7 @@ function deleteProduct(id){
         xhr.onreadystatechange = function () {
             if(xhr.readyState === 4 && xhr.status === 200){
                 alert("Success");
-                window.location.href = '/demo_spring/com/example/demo_spring/Ass/Form_News.html';
+                window.location.href = '/demo_spring/com/example/demo_spring/Ass/News.html';
             }
         };
         xhr.open('DELETE','http://localhost:8080/api/v1/news/' + id,false);
