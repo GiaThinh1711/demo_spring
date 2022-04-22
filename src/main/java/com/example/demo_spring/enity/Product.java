@@ -16,5 +16,4 @@ public class Product {
     private double price;
     private int status;
 
-
 }
