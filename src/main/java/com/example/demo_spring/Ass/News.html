@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href=" https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css ">
-    <style>
-        #news-table {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        #customers td, #customers th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        #customers tr:nth-child(even){background-color: #f2f2f2;}
-
-        #customers tr:hover {background-color: #ddd;}
-
-        #customers th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #04AA6D;
-            color: white;
-        }
-    </style>
-    <meta charset="UTF-8">
-    <script src="News.js"></script>
-</head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href=" https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css ">
 <body>
+<style>
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
 
-<h1>News Table</h1>
-<table id="news-table">
-    <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Description</th>
-        <th>Image</th>
-        <th>Content</th>
-        <th>Category</th>
-        <th>CreateAt</th>
-        <th>UpdateAt</th>
-        <th>Status</th>
-    </tr>
-</table>
-
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+    .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
+<div class="w3-container">
+    <h1 style="text-align: center">List News</h1>
+    <a href="Form_News.html"><button class="button button1">+ Add News</button></a>
+    <table class="w3-table-all" id="news-table">
+        <thead>
+        <tr class="w3-red">
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Content</th>
+            <th>Category</th>
+            <th>CreateAt</th>
+            <th>UpdateAt</th>
+            <th>Status</th>
+            <th>
+            <td></td>
+            <td></td>
+            <td></td>
+            </th>
+        </tr>
+        </thead>
+    </table>
+</div>
+<script src="News.js"></script>
 </body>
 </html>
-
-
